@@ -1,40 +1,34 @@
+import 'package:brijesh_portfolio/res/constants.dart';
+import 'package:brijesh_portfolio/view/splash/splash_view.dart';
 import 'package:flutter/material.dart';
+
+
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Web on Vercel',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
       debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Vercel Flutter Web Test'),
-      ),
-      body: const Center(
-        child: Text(
-          'Hello from Flutter Web deployed on Vercel!',
-          style: TextStyle(fontSize: 24),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        scaffoldBackgroundColor: bgColor,
+        useMaterial3: true,
+        textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
+            .apply(bodyColor: Colors.white,)
+            .copyWith(
+          bodyLarge: const TextStyle(color: bodyTextColor),
+          bodyMedium: const TextStyle(color: bodyTextColor),
         ),
       ),
+
+      home: SplashView()
     );
   }
 }
+
+

@@ -213,7 +213,9 @@ class ProjectDetail extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: defaultPadding / 3),
+
+if (!isMobile) const SizedBox(height: defaultPadding / 2),
+          
 
           ProjectLinks(index: index),
         ],

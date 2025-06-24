@@ -17,14 +17,14 @@ return Padding(
       padding: const EdgeInsets.only(right :4, left: 4),
       child: Row(
         children: [
-          TextButton(
-            onPressed: () {
-              launchUrl(Uri.parse(projectList[index].link));
-            },
-            child: const Text('Source Code',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 6),),
-          ),
+          // TextButton(
+          //   onPressed: () {
+          //     launchUrl(Uri.parse(projectList[index].link));
+          //   },
+          //   child: const Text('Source Code',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 6),),
+          // ),
           const Spacer(),
-          IconButton(onPressed: () {launchUrl(Uri.parse(projectList[index].link));}, icon: SvgPicture.asset('assets/icons/github.svg'),iconSize: 10,),
+          IconButton(onPressed: () {launchUrl(Uri.parse(projectList[index].link));}, icon: SvgPicture.asset('assets/icons/github.svg'),iconSize: 8,),
         ],
       ),
     );

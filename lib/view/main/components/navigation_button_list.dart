@@ -76,11 +76,8 @@
 // }
 
 
-
 import 'package:flutter/material.dart';
 import 'package:brijesh_portfolio/view%20model/controller.dart';
-import 'package:brijesh_portfolio/view%20model/responsive.dart';
-
 import 'navigation_button.dart';
 
 class NavigationButtonList extends StatelessWidget {
@@ -104,15 +101,14 @@ class NavigationButtonList extends StatelessWidget {
               },
               text: 'Home',
             ),
-
-              NavigationTextButton(
-                onTap: () {
-                  controller.animateToPage(1,
-                      duration: const Duration(milliseconds: 500),
-                      curve: Curves.easeIn);
-                },
-                text: 'About Me',
-              ),
+            NavigationTextButton(
+              onTap: () {
+                controller.animateToPage(1,
+                    duration: const Duration(milliseconds: 500),
+                    curve: Curves.easeIn);
+              },
+              text: 'About Me',
+            ),
             NavigationTextButton(
               onTap: () {
                 controller.animateToPage(2,
@@ -142,7 +138,7 @@ class NavigationButtonList extends StatelessWidget {
 
         return Transform.scale(
           scale: value,
-          child: screenWidth < 700
+          child: screenWidth < 600 // ✅ updated from 500 → 600
               ? SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: navRow,

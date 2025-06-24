@@ -151,7 +151,7 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+
       body: Padding(
         padding: const EdgeInsets.all(defaultPadding),
         child: SingleChildScrollView(

@@ -11448,7 +11448,7 @@ _.d=d
 _.e=e
 _.f=f},
 Od:function Od(){},
-qF(a,b,c){return new A.qE(b,c,a,null)},
+qF(a,b){return new A.qE(a,b,null,null)},
 xu(a){var s=a.Ax(t.Np)
 if(s!=null)return s
 throw A.f(A.EX(A.a([A.pE("Scaffold.of() called with a context that does not contain a Scaffold."),A.bc("No Scaffold ancestor could be found starting from the context that was passed to Scaffold.of(). This usually happens when the context provided is from the same StatefulWidget as that whose build function actually creates the Scaffold widget being sought."),A.EL('There are several ways to avoid this problem. The simplest is to use a Builder to get a context that is "under" the Scaffold. For an example of this, please see the documentation for Scaffold.of():\n  https://api.flutter.dev/flutter/material/Scaffold/of.html'),A.EL("A more efficient solution is to split your build function into several widgets. This introduces a new context from which you can obtain the Scaffold. In this solution, you would have an outer widget that creates the Scaffold populated by instances of your new inner widgets, and then in these inner widgets you would use Scaffold.of().\nA less elegant but more expedient solution is assign a GlobalKey to the Scaffold, then use the key.currentState property to obtain the ScaffoldState rather than using the Scaffold.of() function."),a.a5j("The context used was")],t.E)))},
@@ -36145,7 +36145,7 @@ else if(r>=500)return s.d
 else return s.e}}
 A.Cs.prototype={
 M(a){var s=this,r=s.og(),q=s.og(),p=s.og()
-return A.qF(B.l,new A.cW(B.ci,A.J8(A.dS(A.a([B.Vg,B.Px,new A.h0(r,s.og(),p,q,s.og(),null)],t.p),B.X,B.y)),null),null)},
+return A.qF(new A.cW(B.ci,A.J8(A.dS(A.a([B.Vg,B.Px,new A.h0(r,s.og(),p,q,s.og(),null)],t.p),B.X,B.y)),null),null)},
 og(){var s=null,r=t.p
 return A.dS(A.a([B.V4,B.iL,B.V1,B.an,new A.Kn(10,10,A.a([new A.f7("Flutter",s),new A.f7("Dart",s),new A.f7("Firebase",s),new A.f7("REST API",s),new A.f7("WebSockets",s),new A.f7("BLoC",s),new A.f7("Provider",s),new A.f7("Git",s),new A.f7("OSM",s),new A.f7("UI/UX Design",s)],r),s)],r),B.X,B.y)}}
 A.f7.prototype={
@@ -36175,7 +36175,7 @@ q.push(B.an)
 s=A.Cz(3,1.3)
 r=A.Cz(4,1.3)
 q.push(A.pG(new A.h0(s,A.Cz(1,1.8),A.Cz(1,1.5),A.Cz(2,1.4),r,null),1))
-return A.qF(null,A.dS(q,B.X,B.y),null)}}
+return A.qF(A.dS(q,B.X,B.y),null)}}
 A.Cx.prototype={
 M(a){var s,r=null,q=t.w,p=A.aG(a,B.x,q).w,o=this.c,n=A.cn($.S7()[o].a,1,B.aN,A.aj(a).p1.f.pt(B.i,B.a0),r)
 q=A.aG(a,B.x,q).w.a.a<=500?B.b1:B.an
@@ -36223,7 +36223,7 @@ q.push(B.an)
 s=A.Dc(3,1.5)
 r=A.Dc(4,1.6)
 q.push(A.pG(new A.h0(s,A.Dc(1,1.8),A.Dc(1,1.4),A.Dc(2,1.7),r,null),1))
-return A.qF(null,A.dS(q,B.X,B.y),null)}}
+return A.qF(A.dS(q,B.X,B.y),null)}}
 A.De.prototype={
 M(a){var s=null,r=A.cy(30),q=A.cy(30),p=this.d,o=A.cn($.Co()[p].a,1,B.aN,A.aj(a).p1.x.pt(B.i,B.a0),s),n=$.Co()[p],m=t.p
 return A.kT(!1,r,!0,A.p0(A.J8(A.dS(A.a([o,B.an,A.eb(A.a([A.cn(n.b,s,s,B.TW,s),A.cn(n.c,s,s,B.Sr,s)],m),B.G,B.hY,B.P),B.b1,A.azd(A.yC(A.a([A.yC(s,B.RW,$.Co()[p].d)],t.VO),B.c5,"Skills : "),1,s,s),B.an,A.kT(!1,s,!0,A.fg(s,B.Nr,B.A,s,s,new A.cq(s,s,s,A.cy(30),B.hF,new A.fr(B.bk,B.b4,B.aD,A.a([B.aA,B.d1],t.O),s,s),B.a_),s,40,s,s,s,s,150),s,!0,s,s,s,s,s,s,s,s,s,new A.TO(this),s,s,s,s)],m),B.X,B.y)),new A.cq(B.bK,s,s,q,s,s,B.a_),B.bb,1/0,s,B.ci,1/0),s,!0,s,s,s,s,s,s,s,new A.TP(this),s,new A.TQ(),s,s,s,s)}}
@@ -36381,7 +36381,7 @@ q.push(A.h4(s,s,A.aG(a,B.x,r).w.a.a*0.02))
 if(!(A.aG(a,B.x,r).w.a.a<=700))q.push(B.PG)
 q.push(A.h4(s,s,A.aG(a,B.x,r).w.a.a*0.07))
 q.push(B.Fm)
-return A.qF(s,A.eb(q,B.G,B.y,B.P),s)}}
+return A.qF(A.eb(q,B.G,B.y,B.P),s)}}
 A.Yz.prototype={
 $0(){return A.xu(this.a).Nt()},
 $S:0}
@@ -36433,7 +36433,7 @@ if(!(A.aG(a,B.x,r).w.a.a<=700))q.push(B.qK)
 q.push(B.fm)
 q.push(B.Ef)
 q.push(B.ao)
-return A.qF(s,A.eb(q,B.G,B.y,B.P),s)}}
+return A.qF(A.eb(q,B.G,B.y,B.P),s)}}
 A.a7N.prototype={
 $0(){return A.xu(this.a).Nt()},
 $S:0}
@@ -36465,10 +36465,10 @@ A.a1J.prototype={
 $0(){$.tx().pa(4,B.ba,B.bb)},
 $S:0}
 A.G2.prototype={
-M(a){var s=null,r=t.w,q=A.aG(a,B.x,r).w,p=A.a([!(q.a.a<=700)?B.iL:B.b1,B.Pz],t.p)
-if(A.aG(a,B.x,r).w.a.a<=700)p.push(B.Ns)
-p.push(A.pG(new A.wI(B.aw,$.tx(),B.Le,new A.a6i(A.W(this.c,!0,t.l7),A.aN([null,0],t.LO,t.S)),s),9))
-return A.qF(s,A.Da(A.dS(p,B.G,B.y),s,s),B.Er)}}
+M(a){var s=t.w,r=A.aG(a,B.x,s).w,q=A.a([!(r.a.a<=700)?B.iL:B.b1,B.Pz],t.p)
+if(A.aG(a,B.x,s).w.a.a<=700)q.push(B.Ns)
+q.push(A.pG(new A.wI(B.aw,$.tx(),B.Le,new A.a6i(A.W(this.c,!0,t.l7),A.aN([null,0],t.LO,t.S)),null),9))
+return A.qF(A.Da(A.dS(q,B.G,B.y),null,null),B.Er)}}
 A.Hc.prototype={
 M(a){var s=null,r=this.c,q=$.Sk()[r],p=A.aG(a,B.x,t.w).w,o=A.Da(A.cn(q.a,1,B.aN,A.aj(a).p1.f.pt(B.i,B.a0),B.dL),s,s),n=q.c,m=A.a0(n).h("a9<1,cW>")
 return new A.cW(B.l3,A.dS(A.a([o,B.an,A.cn(q.b,3,B.aN,A.ok(s,s,B.D,s,s,s,s,s,s,s,s,p.a.a<=500?13:14,s,s,s,s,1.5,!0,s,s,s,s,s,s,s,s),s),B.b1,A.pG(A.J8(A.dS(A.W(new A.a9(n,new A.a2V(),m),!0,m.h("at.E")),B.X,B.y)),1),B.b1,new A.Hf(r,s)],t.p),B.X,B.y),s)}}
@@ -36540,7 +36540,7 @@ q.push(B.an)
 s=A.He(3,1.24)
 r=A.He(4,1.24)
 q.push(A.pG(new A.h0(s,A.He(1,1.8),A.He(1,1.5),A.He(2,1.4),r,null),1))
-return A.qF(null,A.dS(q,B.X,B.y),null)}}
+return A.qF(A.dS(q,B.X,B.y),null)}}
 A.CG.prototype={
 M(a){return A.h4(A.os(new A.SL(),B.eo,new A.av(0,1,t.Y),t.i),null,100)}}
 A.SL.prototype={

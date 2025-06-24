@@ -136,7 +136,7 @@ class NavigationButtonList extends StatelessWidget {
             child: ConstrainedBox(
               constraints: const BoxConstraints(minWidth: 300),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 2),
+                padding: const EdgeInsets.symmetric(horizontal: 1),
                 child: navButtons,
               ),
             ),

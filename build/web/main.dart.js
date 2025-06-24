@@ -36204,7 +36204,7 @@ return A.oY(new A.CD(A.kU($.he(),A.agU(),t.Rv),p,s),new A.cq(s,s,s,r,q,B.eH,B.a0
 $S:80}
 A.CD.prototype={
 M(a){var s=null
-return A.kT(!1,A.cy(30),!0,A.oY(new A.Cz(this.d,s),new A.cq(B.bK,s,s,A.cy(30),s,s,B.a0),B.bc,s,s,B.Ff,s),s,!0,s,s,s,s,s,s,s,new A.Sz(this),s,new A.SA(),s,s,s,s)}}
+return A.kT(!1,A.cy(30),!0,A.oY(new A.Cz(this.d,s),new A.cq(B.bK,s,s,A.cy(30),s,s,B.a0),B.bc,s,s,B.Fg,s),s,!0,s,s,s,s,s,s,s,new A.Sz(this),s,new A.SA(),s,s,s,s)}}
 A.Sz.prototype={
 $1(a){var s=this.a,r=s.c.ax,q=r.fb$
 q===$&&A.b()
@@ -36450,7 +36450,7 @@ if(s==null)s=A.lD(q,q,B.i,q,q,q,q,q,q,q,q,r.e,q,q,B.Y,q,q,!0,q,q,q,q,q,q,q,q)
 return A.aix(A.cn(r.d,q,q,s,q),r.c)}}
 A.Gt.prototype={
 M(a){var s=null,r=A.aG(a,s,t.w).w.a.a,q=r<500?10:14,p=A.dZ(A.a([A.Gw(q,new A.a1H(),"Home"),A.Gw(q,new A.a1I(),"About"),A.Gw(q,new A.a1J(),"Projects"),A.Gw(q,new A.a1K(),"Certifications"),A.Gw(q,new A.a1L(),"Achievements")],t.p),B.F,B.y,B.N)
-return r<400?A.xV(new A.ir(B.yz,new A.cF(B.Fg,p,s),s),B.yx,B.b6):new A.cF(B.l5,p,s)}}
+return r<400?A.xV(new A.ir(B.yz,new A.cF(B.Ff,p,s),s),B.yx,B.b6):new A.cF(B.l5,p,s)}}
 A.a1H.prototype={
 $0(){return $.tw().pa(0,B.bb,B.bc)},
 $S:0}
@@ -73425,9 +73425,9 @@ B.Fb=new A.aZ(0,8,0,8)
 B.Fc=new A.aZ(10,10,10,0)
 B.l3=new A.aZ(12,8,12,8)
 B.Fe=new A.aZ(16,0,16,0)
-B.Ff=new A.aZ(20,20,20,0)
+B.Ff=new A.aZ(1,0,1,0)
+B.Fg=new A.aZ(20,20,20,0)
 B.ci=new A.aZ(20,20,20,20)
-B.Fg=new A.aZ(2,0,2,0)
 B.hk=new A.aZ(30,0,30,0)
 B.Fh=new A.aZ(10,6.666666666666667,10,6.666666666666667)
 B.l4=new A.aZ(4,0,4,0)

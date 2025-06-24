@@ -14,8 +14,8 @@ class PersonalInfo extends StatelessWidget {
         SizedBox(height: defaultPadding/2,),
         AreaInfoText(title: 'Contact', text: '+918433267372'),
         AreaInfoText(title: 'Email', text: 'gangwarbrijesh87@gmail.com'),
-        AreaInfoText(title: 'LinkedIn', text: '@brijesh-gangwar'),
-        AreaInfoText(title: 'Github', text: '@brijesh-gangwar'),
+        // AreaInfoText(title: 'LinkedIn', text: '@brijesh-gangwar'),
+        // AreaInfoText(title: 'Github', text: '@brijesh-gangwar'),
         SizedBox(
           height: defaultPadding,
         ),

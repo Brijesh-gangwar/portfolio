@@ -14,7 +14,7 @@ class ProjectLinks extends StatelessWidget {
 
     if(size.width < 500) {
 return Padding(
-      padding: const EdgeInsets.only(bottom: 4,right :4, left: 4),
+      padding: const EdgeInsets.only(right :4, left: 4),
       child: Row(
         children: [
           TextButton(

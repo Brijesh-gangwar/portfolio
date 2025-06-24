@@ -144,7 +144,12 @@ class ProjectDetail extends StatelessWidget {
     final isMobile = Responsive.isMobile(context);
 
     return Padding(
-      padding: const EdgeInsets.all(defaultPadding / 2),
+      padding: const EdgeInsets.only(
+        top: defaultPadding / 3,
+        left: defaultPadding / 2,
+        right: defaultPadding / 2,
+        bottom: defaultPadding / 3,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -188,7 +193,7 @@ class ProjectDetail extends StatelessWidget {
                             const Text(
                               '• ',
                               style: TextStyle(
-                                  color: Colors.tealAccent, fontSize: 14),
+                                  color: Colors.tealAccent, fontSize: 12),
                             ),
                             Expanded(
                               child: Text(
@@ -208,7 +213,7 @@ class ProjectDetail extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: defaultPadding / 2),
+          const SizedBox(height: defaultPadding / 3),
 
           ProjectLinks(index: index),
         ],

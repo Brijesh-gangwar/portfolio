@@ -47,18 +47,21 @@ class NavigationTextButton extends StatelessWidget {
     return InkWell(
               onTap: onTap,
 
-        child: Text(
-          text,
-          style: defaultStyle?.copyWith(
-                fontSize: fontSize,
-                fontWeight: fontWeight ?? FontWeight.bold,
-                color: color ?? Colors.white,
-              ) ??
-              TextStyle(
-                fontSize: fontSize,
-                fontWeight: fontWeight ?? FontWeight.bold,
-                color: color ?? Colors.white,
-              ),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 8,bottom: 8),
+          child: Text(
+            text,
+            style: defaultStyle?.copyWith(
+                  fontSize: fontSize,
+                  fontWeight: fontWeight ?? FontWeight.bold,
+                  color: color ?? Colors.white,
+                ) ??
+                TextStyle(
+                  fontSize: fontSize,
+                  fontWeight: fontWeight ?? FontWeight.bold,
+                  color: color ?? Colors.white,
+                ),
+          ),
         ),
       
     );

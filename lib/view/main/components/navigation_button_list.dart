@@ -86,64 +86,64 @@ class NavigationButtonList extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
 
+    // Smaller font size for narrow screens
+    final double navFontSize = screenWidth < 500 ? 10 : 14;
+
     final navButtons = Row(
-      mainAxisSize: MainAxisSize.min,
       children: [
         NavigationTextButton(
-          onTap: () => controller.animateToPage(
-            0,
-            duration: const Duration(milliseconds: 500),
-            curve: Curves.easeIn,
-          ),
+          onTap: () => controller.animateToPage(0,
+              duration: const Duration(milliseconds: 500),
+              curve: Curves.easeIn),
           text: 'Home',
+          fontSize: navFontSize,
         ),
         NavigationTextButton(
-          onTap: () => controller.animateToPage(
-            1,
-            duration: const Duration(milliseconds: 500),
-            curve: Curves.easeIn,
-          ),
-          text: 'About Me',
+          onTap: () => controller.animateToPage(1,
+              duration: const Duration(milliseconds: 500),
+              curve: Curves.easeIn),
+          text: 'About',
+          fontSize: navFontSize,
         ),
         NavigationTextButton(
-          onTap: () => controller.animateToPage(
-            2,
-            duration: const Duration(milliseconds: 500),
-            curve: Curves.easeIn,
-          ),
+          onTap: () => controller.animateToPage(2,
+              duration: const Duration(milliseconds: 500),
+              curve: Curves.easeIn),
           text: 'Projects',
+          fontSize: navFontSize,
         ),
         NavigationTextButton(
-          onTap: () => controller.animateToPage(
-            3,
-            duration: const Duration(milliseconds: 500),
-            curve: Curves.easeIn,
-          ),
+          onTap: () => controller.animateToPage(3,
+              duration: const Duration(milliseconds: 500),
+              curve: Curves.easeIn),
           text: 'Certifications',
+          fontSize: navFontSize,
         ),
         NavigationTextButton(
-          onTap: () => controller.animateToPage(
-            4,
-            duration: const Duration(milliseconds: 500),
-            curve: Curves.easeIn,
-          ),
+          onTap: () => controller.animateToPage(4,
+              duration: const Duration(milliseconds: 500),
+              curve: Curves.easeIn),
           text: 'Achievements',
+          fontSize: navFontSize,
         ),
       ],
     );
 
-    return screenWidth < 600
+    return screenWidth < 400
         ? SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             physics: const BouncingScrollPhysics(),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(minWidth: 700),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(minWidth: 300),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 2),
                 child: navButtons,
               ),
             ),
           )
-        : navButtons;
+        : Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: navButtons,
+          );
   }
 }

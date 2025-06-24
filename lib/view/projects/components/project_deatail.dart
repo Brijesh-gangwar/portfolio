@@ -34,7 +34,7 @@
 //     );
 //   }
 // }
-// dhdjg
+// 
 import 'package:flutter/material.dart';
 import 'package:brijesh_portfolio/view/projects/components/project_link.dart';
 import '../../../model/project_model.dart';
@@ -83,7 +83,7 @@ class ProjectDetail extends StatelessWidget {
 
           const SizedBox(height: defaultPadding / 2),
 
-
+          // ✅ Scrollable area using SingleChildScrollView instead of ListView + Scrollbar
           Expanded(
             child: SingleChildScrollView(
               child: Column(
@@ -117,11 +117,9 @@ class ProjectDetail extends StatelessWidget {
             ),
           ),
 
-
           const SizedBox(height: defaultPadding / 2),
 
           ProjectLinks(index: index),
-
         ],
       ),
     );

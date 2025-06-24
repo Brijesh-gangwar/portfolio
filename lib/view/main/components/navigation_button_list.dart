@@ -26,7 +26,7 @@ class NavigationButtonList extends StatelessWidget {
                 },
                 text: 'Home',
               ),
-              if (!Responsive.isLargeMobile(context))
+              // if (!Responsive.isLargeMobile(context))
                 NavigationTextButton(
                   onTap: () {
                     controller.animateToPage(

@@ -9,20 +9,23 @@ class ProjectLinks extends StatelessWidget {
   const ProjectLinks({super.key, required this.index});
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Row(
-          children: [
-            const Text('Check on Github',style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis),
-            IconButton(onPressed: () {launchUrl(Uri.parse(projectList[index].link));}, icon: SvgPicture.asset('assets/icons/github.svg')),
-          ],
-        ),
-        const Spacer(),
-        TextButton(
-            onPressed: () {
-              launchUrl(Uri.parse(projectList[index].link));
-            }, child: const Text('Source Code',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 10),))
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10,right :4, left: 4),
+      child: Row(
+        children: [
+          Row(
+            children: [
+              const Text('Check on Github',style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis),
+              IconButton(onPressed: () {launchUrl(Uri.parse(projectList[index].link));}, icon: SvgPicture.asset('assets/icons/github.svg')),
+            ],
+          ),
+          const Spacer(),
+          TextButton(
+              onPressed: () {
+                launchUrl(Uri.parse(projectList[index].link));
+              }, child: const Text('Source Code',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 10),))
+        ],
+      ),
     );
   }
 }

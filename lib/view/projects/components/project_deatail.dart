@@ -83,7 +83,7 @@ class ProjectDetail extends StatelessWidget {
 
           const SizedBox(height: defaultPadding / 2),
 
-          // ✅ Scrollable area using SingleChildScrollView instead of ListView + Scrollbar
+
           Expanded(
             child: SingleChildScrollView(
               child: Column(
@@ -117,9 +117,11 @@ class ProjectDetail extends StatelessWidget {
             ),
           ),
 
+
           const SizedBox(height: defaultPadding / 2),
 
           ProjectLinks(index: index),
+                    const SizedBox(height: defaultPadding / 2),
         ],
       ),
     );

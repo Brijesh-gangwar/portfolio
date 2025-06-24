@@ -1,4 +1,4 @@
-import 'package:brijesh_portfolio/res/constants.dart';
+
 import 'package:flutter/material.dart';
 import 'package:brijesh_portfolio/view%20model/responsive.dart';
 import 'package:brijesh_portfolio/view/intro/components/intro_body.dart';
@@ -25,7 +25,7 @@ class Introduction extends StatelessWidget {
           const Expanded(
             child: IntroBody(),
           ),
-          SizedBox(height: smallPadding,)
+          SizedBox(height: 20,)
         ],
       ),
     );

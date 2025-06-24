@@ -44,21 +44,23 @@ class NavigationTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final defaultStyle = Theme.of(context).textTheme.labelMedium;
 
-    return TextButton(
-      onPressed: onTap,
-      child: Text(
-        text,
-        style: defaultStyle?.copyWith(
-              fontSize: fontSize,
-              fontWeight: fontWeight ?? FontWeight.bold,
-              color: color ?? Colors.white,
-            ) ??
-            TextStyle(
-              fontSize: fontSize,
-              fontWeight: fontWeight ?? FontWeight.bold,
-              color: color ?? Colors.white,
-            ),
-      ),
+    return InkWell(
+              onTap: onTap,
+
+        child: Text(
+          text,
+          style: defaultStyle?.copyWith(
+                fontSize: fontSize,
+                fontWeight: fontWeight ?? FontWeight.bold,
+                color: color ?? Colors.white,
+              ) ??
+              TextStyle(
+                fontSize: fontSize,
+                fontWeight: fontWeight ?? FontWeight.bold,
+                color: color ?? Colors.white,
+              ),
+        ),
+      
     );
   }
 }

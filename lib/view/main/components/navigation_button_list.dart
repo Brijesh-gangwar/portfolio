@@ -86,70 +86,64 @@ class NavigationButtonList extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return TweenAnimationBuilder(
-      tween: Tween(begin: 0.0, end: 1.0),
-      duration: const Duration(milliseconds: 200),
-      builder: (context, value, child) {
-        final navButtons = Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            NavigationTextButton(
-              onTap: () => controller.animateToPage(
-                0,
-                duration: const Duration(milliseconds: 500),
-                curve: Curves.easeIn,
-              ),
-              text: 'Home',
-            ),
-            NavigationTextButton(
-              onTap: () => controller.animateToPage(
-                1,
-                duration: const Duration(milliseconds: 500),
-                curve: Curves.easeIn,
-              ),
-              text: 'About Me',
-            ),
-            NavigationTextButton(
-              onTap: () => controller.animateToPage(
-                2,
-                duration: const Duration(milliseconds: 500),
-                curve: Curves.easeIn,
-              ),
-              text: 'Projects',
-            ),
-            NavigationTextButton(
-              onTap: () => controller.animateToPage(
-                3,
-                duration: const Duration(milliseconds: 500),
-                curve: Curves.easeIn,
-              ),
-              text: 'Certifications',
-            ),
-            NavigationTextButton(
-              onTap: () => controller.animateToPage(
-                4,
-                duration: const Duration(milliseconds: 500),
-                curve: Curves.easeIn,
-              ),
-              text: 'Achievements',
-            ),
-          ],
-        );
-
-        return Transform.scale(
-          scale: value,
-          child: screenWidth < 600
-              ? SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  physics: const BouncingScrollPhysics(),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
-                    child: IntrinsicWidth(child: navButtons),
-                  ),
-                )
-              : navButtons,
-        );
-      },
+    final navButtons = Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        NavigationTextButton(
+          onTap: () => controller.animateToPage(
+            0,
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeIn,
+          ),
+          text: 'Home',
+        ),
+        NavigationTextButton(
+          onTap: () => controller.animateToPage(
+            1,
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeIn,
+          ),
+          text: 'About Me',
+        ),
+        NavigationTextButton(
+          onTap: () => controller.animateToPage(
+            2,
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeIn,
+          ),
+          text: 'Projects',
+        ),
+        NavigationTextButton(
+          onTap: () => controller.animateToPage(
+            3,
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeIn,
+          ),
+          text: 'Certifications',
+        ),
+        NavigationTextButton(
+          onTap: () => controller.animateToPage(
+            4,
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeIn,
+          ),
+          text: 'Achievements',
+        ),
+      ],
     );
+
+    return screenWidth < 600
+        ? SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(minWidth: 700),
+                child: navButtons,
+              ),
+            ),
+          )
+        : navButtons;
   }
 }

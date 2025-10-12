@@ -13,14 +13,14 @@ class Knowledges extends StatelessWidget {
         Divider(),
         Padding(
           padding: EdgeInsets.symmetric(vertical: 10),
-          child: Text('Knowledge',style: TextStyle(color: Colors.white),),
+          child: Text('Knowledge', style: TextStyle(color: Colors.white)),
         ),
-        KnowledgeText(knowledge: 'Flutter, Dart'),
-                KnowledgeText(knowledge: 'Firebase, Rest API'),
-        KnowledgeText(knowledge: 'WebSockets, BLoC, Provider'),
-        KnowledgeText(knowledge: 'Git, Github'),
+        KnowledgeText(knowledge: 'Flutter, Dart ,Spring Boot,'),
+        KnowledgeText(knowledge: 'Docker, Microservices, Redis'),
+        KnowledgeText(knowledge: 'WebSockets, REST API'),
+        KnowledgeText(knowledge: 'JPA , MySQL, MongoDB, Convex'),
+        KnowledgeText(knowledge: 'BLoC, Firebase, Provider, Git, GitHub'),
       ],
     );
   }
-
 }

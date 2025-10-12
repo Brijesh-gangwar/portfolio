@@ -91,29 +91,49 @@ class Project {
 }
 
 List<Project> projectList = [
+
+Project(
+  name: 'Kishaan Mitra',
+  description: 'AI-powered agriculture assistant for fertilizer optimization and sustainability.',
+  bulletPoints: [
+    'Built AI-based system to recommend fertilizers by analyzing soil images.',
+    'Integrated REST APIs and multilingual support for 23 Indian languages.',
+    'Leveraged geographic data for precise fertilizer calculations and improved yield.',
+  ],
+  image: 'assets/images/gis.png',
+  link: 'https://github.com/Brijesh-gangwar/kishaan_mitra',
+),
+
+
+Project(
+  name: 'osm_path_tracker',
+  description: 'OPEN SOURCE - Flutter package for precise GPS path tracking using OpenStreetMap.',
+  bulletPoints: [
+    'Real-time tracking with distance-based filtering.',
+    '30% improved path accuracy and smooth rendering.',
+    '1000+ downloads on pub.dev.',
+  ],
+  image: 'assets/images/osm_path_tracker.png',
+  link: 'https://pub.dev/packages/osm_path_tracker',
+),
+
+
+
   Project(
-    name: 'Hi Connect',
-    description: 'A real-time chat app built with Flutter and Firebase.',
+    name: 'AI Assistant',
+    description: 'AI-powered chrome extension for research and productivity.',
     bulletPoints: [
-      'Secure Firebase Authentication.',
-      'End-to-end message encryption.',
-      'Optimized data sync using Firestore.'
+      'Generate AI-powered summaries.',
+      'Containerized Spring Boot backend deployed on Render via Docker',
+      'Handle OpenAI API requests.'
     ],
-    image: 'assets/images/chat.png',
-    link: 'https://github.com/Brijesh-gangwar/hi_connect',
+    image: 'assets/images/gis.png',
+    link: 'https://github.com/Brijesh-gangwar/Sangam',
   ),
-  Project(
-    name: 'Closure Meet',
-    description: 'A Flutter-based video conferencing app using ZegoCloud SDK.',
-    bulletPoints: [
-      'Real-time multi-user group calls.',
-      'Google Sign-In via Firebase Auth.',
-      'Cross-platform responsive UI.'
-    ],
-    image: 'assets/images/video_call.png',
-    link: 'https://github.com/Brijesh-gangwar/closure-meet',
-  ),
-  Project(
+
+
+
+    Project(
     name: 'Sangam',
     description: 'GIS-enabled collaboration tool for city-level governance.',
     bulletPoints: [
@@ -124,7 +144,20 @@ List<Project> projectList = [
     image: 'assets/images/gis.png',
     link: 'https://github.com/Brijesh-gangwar/Sangam',
   ),
-  Project(
+
+    Project(
+    name: 'Closure Meet',
+    description: 'A Flutter-based video conferencing app using ZegoCloud SDK.',
+    bulletPoints: [
+      'Real-time multi-user group calls.',
+      'Google Sign-In via Firebase Auth.',
+      'Cross-platform responsive UI.'
+    ],
+    image: 'assets/images/video_call.png',
+    link: 'https://github.com/Brijesh-gangwar/closure-meet',
+  ),
+
+    Project(
     name: 'Learning Platform',
     description: 'Interactive learning app with video playback & tracking.',
     bulletPoints: [
@@ -135,17 +168,7 @@ List<Project> projectList = [
     image: 'assets/images/learning.png',
     link: 'https://github.com/Brijesh-gangwar/learning_app',
   ),
-  Project(
-    name: 'FixMyRide',
-    description: 'Roadside assistance app with OSM & live SOS tracking.',
-    bulletPoints: [
-      'OpenStreetMap integration for real-time tracking.',
-      'Offline SOS mode & driver dispatch.',
-      'Custom vehicle support UI.'
-    ],
-    image: 'assets/images/fixmyride.png',
-    link: 'https://github.com/Brijesh-gangwar/FixMyRide',
-  ),
+
   Project(
     name: 'Portfolio Website',
     description: 'Responsive portfolio website built using Flutter Web.',
@@ -157,6 +180,34 @@ List<Project> projectList = [
     image: 'assets/images/portfolio.png',
     link: 'https://github.com/Brijesh-gangwar/portfolio',
   ),
+
+  Project(
+    name: 'Hi Connect',
+    description: 'A real-time chat app built with Flutter and Firebase.',
+    bulletPoints: [
+      'Secure Firebase Authentication.',
+      'End-to-end message encryption.',
+      'Optimized data sync using Firestore.'
+    ],
+    image: 'assets/images/chat.png',
+    link: 'https://github.com/Brijesh-gangwar/hi_connect',
+  ),
+
+
+
+  Project(
+    name: 'FixMyRide',
+    description: 'Roadside assistance app with OSM & live SOS tracking.',
+    bulletPoints: [
+      'OpenStreetMap integration for real-time tracking.',
+      'Offline SOS mode & driver dispatch.',
+      'Custom vehicle support UI.'
+    ],
+    image: 'assets/images/fixmyride.png',
+    link: 'https://github.com/Brijesh-gangwar/FixMyRide',
+  ),
+
+
 
   Project(
   name: 'E-Business Store',
@@ -171,15 +222,15 @@ List<Project> projectList = [
   link: 'https://github.com/Brijesh-gangwar/e-business-app',
 ),
 
-  Project(
-    name: 'CRUD Task Manager',
-    description: 'Task manager app with local & cloud sync (Firebase).',
-    bulletPoints: [
-      'Supports full CRUD operations.',
-      'BLoC pattern and local caching.',
-      'Firebase integration with Realtime DB.'
-    ],
-    image: 'assets/images/task.png',
-    link: 'https://github.com/Brijesh-gangwar/crud-app',
-  ),
+  // Project(
+  //   name: 'CRUD Task Manager',
+  //   description: 'Task manager app with local & cloud sync (Firebase).',
+  //   bulletPoints: [
+  //     'Supports full CRUD operations.',
+  //     'BLoC pattern and local caching.',
+  //     'Firebase integration with Realtime DB.'
+  //   ],
+  //   image: 'assets/images/task.png',
+  //   link: 'https://github.com/Brijesh-gangwar/crud-app',
+  // ),
 ];

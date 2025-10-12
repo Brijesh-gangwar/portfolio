@@ -5,6 +5,7 @@ class AchievementsController extends GetxController {
   RxList<bool> hovers =[
     false,
     false,
+    false
 
   ].obs;
 

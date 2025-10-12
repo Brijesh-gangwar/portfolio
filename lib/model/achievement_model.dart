@@ -22,4 +22,12 @@ List<AchievementModel> AchievementsList = [
     '2024-12',
     'https://drive.google.com/drive/folders/14DGpeWxRpBYNFcGy-m3my3Ttcuq8r3HC',
   ),
+
+  AchievementModel(
+  'osm_path_tracker',
+  'Open Source Contribution - Published on pub.dev with 1000+ downloads. Enhanced GPS tracking precision by 30% through optimized stream handling.',
+  '2025-07',
+  'https://pub.dev/packages/osm_path_tracker',
+),
+
 ];

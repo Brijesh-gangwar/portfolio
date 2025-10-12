@@ -16,7 +16,7 @@ class About extends StatelessWidget {
             const Spacer(),
             Text('Brijesh Gangwar',style: Theme.of(context).textTheme.titleSmall,),
             const SizedBox(height: defaultPadding/4,),
-            const Text('Flutter Developer & The Student of\nSoftware Engineering',
+            const Text('App & Spring Boot Developer',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontWeight: FontWeight.w200,

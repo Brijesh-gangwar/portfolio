@@ -14,13 +14,12 @@ class AnimatedDescriptionText extends StatelessWidget {
       duration: const Duration(milliseconds: 200),
       builder: (context, value, child) {
         return Text(
-  'I build scalable backend systems with Spring Boot and seamless mobile apps using Flutter,'
-  '${Responsive.isLargeMobile(context) ? '\n' : ' '}'
-  'covering everything from concept to deployment.',
+  'I build scalable backend systems with Spring Boot & Flutter apps, handling${Responsive.isLargeMobile(context) ? '\n' : ''} every step from ${!Responsive.isLargeMobile(context) ? '\n' : ''}design to deployment.',
   maxLines: 2,
   overflow: TextOverflow.ellipsis,
   style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),
 );
+
 
       },
     );

@@ -36306,8 +36306,9 @@ $S:78}
 A.mq.prototype={
 M(a){return A.r9(new A.SJ(),B.S,new A.ax(this.c,this.d,t.Y),t.i)}}
 A.SJ.prototype={
-$3(a,b,c){var s=null,r=A.aG(a,B.x,t.w).w.a.a<=700?"\n":" "
-return A.co("I build scalable backend systems with Spring Boot and seamless mobile apps using Flutter,"+r+"covering everything from concept to deployment.",2,B.aT,A.k7(s,s,B.eT,s,s,s,s,s,s,s,s,b,s,s,s,s,s,!0,s,s,s,s,s,s,s,2),s)},
+$3(a,b,c){var s=null,r=t.w,q=A.aG(a,B.x,r).w.a.a<=700?"\n":""
+r=!(A.aG(a,B.x,r).w.a.a<=700)?"\n":""
+return A.co("I build scalable backend systems with Spring Boot & Flutter apps, handling"+q+" every step from "+r+"design to deployment.",2,B.aT,A.k7(s,s,B.eT,s,s,s,s,s,s,s,s,b,s,s,s,s,s,!0,s,s,s,s,s,s,s,2),s)},
 $S:76}
 A.EA.prototype={
 M(a){var s=null,r=A.cA(20),q=A.a([B.aB,B.d2],t.O)

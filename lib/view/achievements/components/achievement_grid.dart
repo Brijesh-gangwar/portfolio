@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 import '../../../res/constants.dart';
 
-import '../../../view model/getx_controllers/achievements_controller.dart';
+import '../../../view_model/getx_controllers/achievements_controller.dart';
 import 'achievement_info.dart';
 class AchievementsGrid extends StatelessWidget {
   final int crossAxisCount;

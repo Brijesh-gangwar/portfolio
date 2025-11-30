@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:brijesh_portfolio/view%20model/controller.dart';
+import 'package:brijesh_portfolio/view_model/controller.dart';
 import 'package:brijesh_portfolio/res/constants.dart';
 import 'package:brijesh_portfolio/view/main/components/navigation_bar.dart';
-import '../../view model/responsive.dart';
+import '../../view_model/responsive.dart';
 import 'components/drawer/drawer.dart';
 import 'components/navigation_button_list.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;

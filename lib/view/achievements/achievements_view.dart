@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:brijesh_portfolio/res/constants.dart';
 
-import 'package:brijesh_portfolio/view%20model/responsive.dart';
+import 'package:brijesh_portfolio/view_model/responsive.dart';
 
 import 'package:get/get.dart';
-import '../../view model/getx_controllers/achievements_controller.dart';
+import '../../view_model/getx_controllers/achievements_controller.dart';
 import '../projects/components/title_text.dart';
 
 import 'components/achievement_grid.dart';

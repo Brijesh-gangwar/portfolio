@@ -1,0 +1,16 @@
+{
+  // Replace `/path/to/jdk-17-home` with the location of your JDK 17+ installation.
+  // Example paths on macOS:
+  //  - Homebrew (Apple Silicon): /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
+  //  - Apple/Oracle: /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+  "java.jdt.ls.java.home": "/path/to/jdk-17-home",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/path/to/jdk-17-home",
+      "default": true
+    }
+  ],
+    // Point to your Flutter SDK for the Dart & Flutter extension to use. Replace if needed.
+    "dart.flutterSdkPath": "/Users/gauravyadav/Documents/MOVIE_ANALYSIS_APP/flutter",
+}

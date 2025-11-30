@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:brijesh_portfolio/view%20model/responsive.dart';
+import 'package:brijesh_portfolio/view_model/responsive.dart';
 import 'package:brijesh_portfolio/view/intro/components/intro_body.dart';
 import 'package:brijesh_portfolio/view/intro/components/side_menu_button.dart';
 import 'package:brijesh_portfolio/view/intro/components/social_media_list.dart';

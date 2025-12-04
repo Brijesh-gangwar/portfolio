@@ -3,7 +3,7 @@
 
 // // import '../../../model/project_model.dart';
 // // import '../../../res/constants.dart';
-// // import '../../../view model/responsive.dart';
+// // import '../../../view_model/responsive.dart';
 
 // // class ProjectDetail extends StatelessWidget {
 // //   final int index;
@@ -39,7 +39,7 @@
 // import 'package:brijesh_portfolio/view/projects/components/project_link.dart';
 // import '../../../model/project_model.dart';
 // import '../../../res/constants.dart';
-// import '../../../view model/responsive.dart';
+// import '../../../view_model/responsive.dart';
 
 // class ProjectDetail extends StatelessWidget {
 //   final int index;
@@ -132,7 +132,7 @@ import 'package:flutter/material.dart';
 import 'package:brijesh_portfolio/view/projects/components/project_link.dart';
 import '../../../model/project_model.dart';
 import '../../../res/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../view_model/responsive.dart';
 
 class ProjectDetail extends StatelessWidget {
   final int index;

@@ -1,7 +1,7 @@
 // import 'package:flutter/material.dart';
 // import 'package:brijesh_portfolio/res/constants.dart';
 // import 'package:brijesh_portfolio/view/projects/components/title_text.dart';
-// import '../../view model/responsive.dart';
+// import '../../view_model/responsive.dart';
 
 // class AboutMe extends StatelessWidget {
 //   const AboutMe({super.key});
@@ -141,7 +141,7 @@
 import 'package:flutter/material.dart';
 import 'package:brijesh_portfolio/res/constants.dart';
 import 'package:brijesh_portfolio/view/projects/components/title_text.dart';
-import '../../view model/responsive.dart';
+import '../../view_model/responsive.dart';
 
 class AboutMe extends StatelessWidget {
   const AboutMe({super.key});

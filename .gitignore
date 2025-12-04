@@ -45,5 +45,12 @@ app.*.map.json
 /android/app/release
 .vercel
 
+# Ignore Flutter/SDK generated files that may contain an absolute SDK path
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+macos/Flutter/ephemeral/
+macos/Flutter/Flutter-Generated.xcconfig
+flutter_*.log
+
 
 

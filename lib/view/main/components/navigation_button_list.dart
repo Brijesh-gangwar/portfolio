@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
-// import 'package:brijesh_portfolio/view%20model/controller.dart';
-// import 'package:brijesh_portfolio/view%20model/responsive.dart';
+// import 'package:brijesh_portfolio/view_model/controller.dart';
+// import 'package:brijesh_portfolio/view_model/responsive.dart';
 
 // import 'navigation_button.dart';
 
@@ -76,7 +76,7 @@
 // }
 
 import 'package:flutter/material.dart';
-import 'package:brijesh_portfolio/view%20model/controller.dart';
+import 'package:brijesh_portfolio/view_model/controller.dart';
 import 'navigation_button.dart';
 
 class NavigationButtonList extends StatelessWidget {

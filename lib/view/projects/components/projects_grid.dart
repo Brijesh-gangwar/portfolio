@@ -3,7 +3,7 @@ import 'package:brijesh_portfolio/view/projects/components/project_info.dart';
 import 'package:get/get.dart';
 import '../../../model/project_model.dart';
 import '../../../res/constants.dart';
-import '../../../view model/getx_controllers/projects_controller.dart';
+import '../../../view_model/getx_controllers/projects_controller.dart';
 class ProjectGrid extends StatelessWidget {
   final int crossAxisCount;
   final double ratio;

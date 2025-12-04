@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../model/achievement_model.dart';
 import '../../../res/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../view_model/responsive.dart';
 import 'achievement_link.dart';
 
 class AchievementsDetail extends StatelessWidget {
